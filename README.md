@@ -1,3 +1,8 @@
+numbersorter
+
+This program 
+
+
 # Go: Cookbook
 
 A set of small programs that each performs a specific task, which demonstrates certain feature(s) of Go.
@@ -10,7 +15,7 @@ Riyan is responsible for all the Go code, but CS Professor Ian Harris of UCI sup
     + [Windows and macOS](#windows-and-macos)
     + [Linux](#linux)
 - [2. IBM Finder](#2-ibm-finder)
-- [Contributing](#contributing)
+- [3. Number Sorter]()
 
 ### 0. Requisites: Go and Git
 To test these programs, please ensure you have Go installed on your machine.
@@ -61,3 +66,8 @@ This program plays with:
 - Handling type string
 - Using the strings package
 
+
+
+### 3.  Number Sorter
+```
+```
