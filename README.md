@@ -9,7 +9,7 @@ Riyan is responsible for all the Go code, but CS Professor Ian Harris of UCI sup
 - [1. Decimal Truncator](#1-decimal-truncator)
     + [Windows and macOS](#windows-and-macos)
     + [Linux](#linux)
-- [2. IBM Finder](#quick-start)
+- [2. IBM Finder](#2-ibm-finder)
 - [Contributing](#contributing)
 
 ### 0. Requisites: Go and Git
