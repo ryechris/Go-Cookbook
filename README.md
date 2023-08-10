@@ -11,11 +11,13 @@ Riyan is responsible for all the Go code, but CS Professor Ian Harris of UCI sup
 
 ## Table of Contents
 - [0. Requisites](#1-decimal-truncator)
-- [1. Decimal Truncator](#1-decimal-truncator)
+- [1. Truncate Decimals](#1-decimal-truncator)
     + [Windows and macOS](#windows-and-macos)
     + [Linux](#linux)
-- [2. IBM Finder](#2-ibm-finder)
-- [3. Number Sorter]()
+- [2. Find IBM](#2-ibm-finder)
+- [3. Sort Numbers]()
+- 4. Make JSON
+- 5. Read Data
 
 ### 0. Requisites: Go and Git
 To test these programs, please ensure you have Go installed on your machine.
