@@ -4,16 +4,14 @@ A set of small programs that each performs a specific task, which demonstrates c
 Riyan is responsible 100% for the Go code, but CS Professor Ian Harris of UCI supplies the inspiration.
 
 ## Table of Contents
-- [0. Requisites}(#1-decimal-truncator)
+- [0. Requisites](#1-decimal-truncator)
 - [1. Decimal Truncator](#1-decimal-truncator)
     + [Windows and macOS](#windows-and-macos)
     + [Linux](#linux)
 - [Quick Start](#quick-start)
 - [Contributing](#contributing)
 
-
-
-### 0. Requisites: Go and Git Pull
+### 0. Requisites: Go and Git
 To test these programs, please ensure you have Go installed on your machine.
 
 You can do that by navigating to your Terminal and running this command:
