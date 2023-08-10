@@ -1,6 +1,7 @@
 # Go: Cookbook
 
 A set of small programs that each performs a specific task, which demonstrates certain feature(s) of Go.
+
 Riyan is responsible 100% for the Go code, but CS Professor Ian Harris of UCI supplies the inspiration.
 
 ## Table of Contents
