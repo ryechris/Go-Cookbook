@@ -57,5 +57,7 @@ For example, "icbm" returns Found, but "mbi" does not.
 The letter-finding program succeeds regardles of cases (uppercase, lowercase, or a mix) in the string. 
 
 This program plays with:
+- Arrays/Slices
 - Handling type string
 - Using the strings package
+
