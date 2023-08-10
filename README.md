@@ -9,7 +9,7 @@ Riyan is responsible for all the Go code, but CS Professor Ian Harris of UCI sup
 - [1. Decimal Truncator](#1-decimal-truncator)
     + [Windows and macOS](#windows-and-macos)
     + [Linux](#linux)
-- [Quick Start](#quick-start)
+- [2. IBM Finder](#quick-start)
 - [Contributing](#contributing)
 
 ### 0. Requisites: Go and Git
@@ -39,6 +39,19 @@ go run 01-truncator.go
 This program prompts the user to type a floating number (for example, 3.1415).
 It then removes the decimal point and everything to the right of it (e.g. input: 3.14; result: 3).
 
-Though small and clean, it demonstrates clearly the following concecpts:
-- User Input
-- Type Handling & Conversion 
+Though small and clean, it demonstrates clearly the following concepts:
+- User input
+- Type handling & conversion
+
+
+### 2. IBM Finder
+```
+go run 02-ibm.go
+```
+The above line prompts the user to enter a string. Any string.
+The program then searches that string to see if the characters "i", "b", or "m" are present -- in that order.
+For example, "icbm" returns Found, but "mbi" does not.
+
+This program plays with:
+- Handling type string
+- Using the strings package
