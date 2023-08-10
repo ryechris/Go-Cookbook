@@ -49,8 +49,12 @@ Though small and clean, it demonstrates clearly the following concepts:
 go run 02-ibm.go
 ```
 The above line prompts the user to enter a string. Any string.
+
 The program then searches that string to see if the characters "i", "b", or "m" are present -- in that order.
+
 For example, "icbm" returns Found, but "mbi" does not.
+
+The letter-finding program succeeds regardles of cases (uppercase, lowercase, or a mix) in the string. 
 
 This program plays with:
 - Handling type string
