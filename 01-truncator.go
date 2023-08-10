@@ -16,8 +16,8 @@ func main() {
 		fmt.Println("Please enter a floating number, such as")
 	}
 
-	entry_truncated := strconv.FormatFloat(entry, 'f', 0, 64) // perform the conversion.
-	fmt.Println(entry_truncated) // print the result
+	entry_truncated := strconv.FormatFloat(entry, 'f', 0, 64) // convert the float to string.
+	fmt.Printf("The number is now a string & truncated: %s\n", entry_truncated) // print the result
 
 }
 
