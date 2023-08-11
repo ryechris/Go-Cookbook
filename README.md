@@ -83,7 +83,7 @@ So the concepts we cover in this program are:
 ### 4. JSON Maker
 A popular standard, JSON facilitates information exchange. Programs often need to communicate with other systems. Since systems may vary largely, standards are important.
 
-Go just happens to have a standardized implementation to produce JSON from its various structures.
+Go just happens to have a standardized implementation to produce, encode, and decode JSON from its various structures.
 
 This program demonstrates Go's ability to communicate in JSON.
 It prompts the user to enter a name, and then an address.
