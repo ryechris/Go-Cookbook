@@ -9,7 +9,7 @@ Riyan is responsible for all the Go code, but CS Professor Ian Harris of UCI sup
 - [1. Truncate Decimals](#1-decimal-truncator)
 - [2. Find IBM](#2-ibm-finder)
 - [3. Sort Numbers](#3-number-sorter)
-- [4. Make JSON]()
+- [4. Make JSON](#4-json-maker)
 - [5. Read Data]()
     + [Windows and macOS](#windows-and-macos)
     + [Linux](#linux)
@@ -65,7 +65,7 @@ This program plays with:
 
 
 
-### 3.  Number Sorter
+### 3. Number Sorter
 ```
 go run 03-sort-numbers.go
 ```
