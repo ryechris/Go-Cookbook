@@ -78,3 +78,28 @@ So the concepts we cover in this program are:
 - Slices (of varying length)
 - Packages
 
+
+
+### 4. JSON Maker
+A popular standard, JSON facilitates information exchange. Programs often need to communicate with other systems. Since systems may vary largely, standards are important.
+
+Go just happens to have a standardized implementation to produce JSON from its various structures.
+
+This program demonstrates Go's ability to communicate in JSON.
+It prompts the user to enter a name, and then an address.
+It maps the address to the name, and the program returns the data's JSON object.
+
+```
+input: 
+
+output:
+
+
+```
+
+
+
+
+
+
+
