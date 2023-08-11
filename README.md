@@ -75,6 +75,6 @@ The way we do that is with a slice, which is like a window to an array, instead 
 That way, we can keep increasing the size of the slice to contain every number you place in it.
 
 So the concepts we cover in this program are:
-- Slices
+- Slices (of varying length)
 - Packages
 
