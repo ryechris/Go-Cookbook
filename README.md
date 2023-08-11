@@ -1,8 +1,3 @@
-numbersorter
-
-This program 
-
-
 # Go: Cookbook
 
 A set of small programs that each performs a specific task, which demonstrates certain feature(s) of Go.
@@ -15,7 +10,7 @@ Riyan is responsible for all the Go code, but CS Professor Ian Harris of UCI sup
     + [Windows and macOS](#windows-and-macos)
     + [Linux](#linux)
 - [2. Find IBM](#2-ibm-finder)
-- [3. Sort Numbers]()
+- [3. Sort Numbers](#3-number-sorter)
 - 4. Make JSON
 - 5. Read Data
 
@@ -41,7 +36,7 @@ go run <filename>.go
 
 ### 1. Decimal Truncator
 ```
-go run 01-truncator.go
+go run 01-truncate-decimals.go
 ```
 This program prompts the user to type a floating number (for example, 3.1415).
 It then removes the decimal point and everything to the right of it (e.g. input: 3.14; result: 3).
@@ -53,7 +48,7 @@ Though small and clean, it demonstrates clearly the following concepts:
 
 ### 2. IBM Finder
 ```
-go run 02-ibm.go
+go run 02-find-ibm.go
 ```
 The above line prompts the user to enter a string. Any string.
 
@@ -72,4 +67,14 @@ This program plays with:
 
 ### 3.  Number Sorter
 ```
+go run 03-sort-numbers.go
 ```
+Go's array has a fixed length: it can only contain as many elements as what you set it to be when you create it.
+However, in this program, you can add as many numbers as you want to the container.
+The way we do that is with a slice, which is like a window to an array, instead of an array itself.
+That way, we can keep increasing the size of the slice to contain every number you place in it.
+
+So the concepts we cover in this program are:
+- Slices
+- Packages
+

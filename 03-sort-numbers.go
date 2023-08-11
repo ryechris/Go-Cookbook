@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt" // We can use the slices package, but not every Go installation has it.
-	"sort"
+	"fmt"
+ 	"sort"  // We can use the slices package, but not every Go installation has it. 
 	"strconv"
 	"strings"
 )
