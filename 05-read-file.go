@@ -78,4 +78,3 @@ func read(array_of_bytes []byte, file *os.File, slice []Person) []Person {
 	}
 	return slice // return slice lest the main slice above doesn't get updated.
 }
-
