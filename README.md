@@ -109,3 +109,45 @@ Hence, this program contains the following concepts:
 - Map
 - JSON
 
+
+
+#### 5. File Reader
+Programs of course must be able to talk with files. So here we illustrate Go's ability to do that.
+
+When you did git pull, included in the folder are two example files:
+```
+05-file1.txt
+05-file2.txt
+```
+Each of these files has a list of names: on each line are two name values, separated by a comma.
+```
+George,Washington
+Abraham,Lincoln
+```
+We will use these files in the program.  When the user runs the following line:
+```
+go run 05-read-file.go
+```
+the program presents two options: file1 or file2. If the user types 1, the program processes file 1.
+If the user types 2, the program processes file 2. If the user types something else, the program will output an error.
+
+The program processes the file by
+1. opening the file
+2. reading the file
+3. closing the file
+In closing, it returns the data to the user in this format: 
+```
+First Name: George
+Last Name: Washington
+
+First Name: Abraham
+Last Name: Washington 
+```
+Of course we can do anything with that data, such as printing it in JSON.
+But we have already done a JSON example in file 04, so here we show another capability of Go programs.
+
+In so doing, we are able to focus more on fewer ideas -- since it is a cookbook -- instead of having too many ingredients in the program:
+Topics:
+- Slice: type, iteration
+- Flow control: loops, if, switch
+- Functions
