@@ -6,15 +6,13 @@ Riyan is responsible for all the Go code, but CS Professor Ian Harris of UCI sup
 
 ## Table of Contents
 - [0. Requisites](#1-decimal-truncator)
-- [Data Type]()
+- [Data Type](#data-type)
     + [1. Truncate Decimals](#1-decimal-truncator)
     + [2. Find IBM](#2-ibm-finder)
     + [3. Sort Numbers](#3-number-sorter)
-- [Format]()
+- [Format](#format)
     + [4. Make JSON](#4-json-maker)
     + [5. Read Data]()
-    + [Windows and macOS](#windows-and-macos)
-    + [Linux](#linux)
 
 
 #### 0. Requisites: Go and Git
