@@ -12,8 +12,7 @@ Riyan is responsible for all the Go code, but CS Professor Ian Harris of UCI sup
     + [3. Sort Numbers](#3-number-sorter)
 - [Format](#format)
     + [4. Make JSON](#4-json-maker)
-    + [5. Read Data]()
-
+    + [5. Read File](#5-read-file)
 
 #### 0. Requisites: Go and Git
 To test these programs, please ensure you have Go installed on your machine.
