@@ -63,6 +63,9 @@ func main() {
 				fmt.Printf("First Name: %s\n", value.fname)
 				fmt.Printf("Last Name: %s \n\n", value.lname)
 			}
+      fmt.Println("Many thanks!")
+      fmt.Println("Program exiting...")
+      return
 		}
 	}
 }

@@ -1,0 +1,5 @@
+Donald,Trump        
+Rishi,Sunak         
+Jinping,Xi          
+Vladimir,Putin      
+Narendra,Modi       
