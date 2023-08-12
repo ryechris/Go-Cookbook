@@ -6,15 +6,18 @@ Riyan is responsible for all the Go code, but CS Professor Ian Harris of UCI sup
 
 ## Table of Contents
 - [0. Requisites](#1-decimal-truncator)
-- [1. Truncate Decimals](#1-decimal-truncator)
-- [2. Find IBM](#2-ibm-finder)
-- [3. Sort Numbers](#3-number-sorter)
-- [4. Make JSON](#4-json-maker)
-- [5. Read Data]()
+- [Data Type]()
+    + [1. Truncate Decimals](#1-decimal-truncator)
+    + [2. Find IBM](#2-ibm-finder)
+    + [3. Sort Numbers](#3-number-sorter)
+- [Format]()
+    + [4. Make JSON](#4-json-maker)
+    + [5. Read Data]()
     + [Windows and macOS](#windows-and-macos)
     + [Linux](#linux)
 
-### 0. Requisites: Go and Git
+
+#### 0. Requisites: Go and Git
 To test these programs, please ensure you have Go installed on your machine.
 
 You can do that by navigating to your Terminal and running this command:
@@ -34,7 +37,10 @@ And, of course, you can run the files with this format:
 go run <filename>.go
 ```
 
-### 1. Decimal Truncator
+
+### Data Type
+
+#### 1. Decimal Truncator
 ```
 go run 01-truncate-decimals.go
 ```
@@ -46,7 +52,7 @@ Though small and clean, it demonstrates clearly the following concepts:
 - Type handling & conversion
 
 
-### 2. IBM Finder
+#### 2. IBM Finder
 ```
 go run 02-find-ibm.go
 ```
@@ -65,7 +71,7 @@ This program plays with:
 
 
 
-### 3. Number Sorter
+#### 3. Number Sorter
 ```
 go run 03-sort-numbers.go
 ```
@@ -79,12 +85,13 @@ So the concepts we cover in this program are:
 - Packages
 
 
+### Format
 
-### 4. JSON Maker
+#### 4. JSON Maker
 ```
 go run 04-make-json.go
 ```
-A popular standard, JSON facilitates information exchange. Programs often need to communicate with other systems. Since systems may vary largely, standards are important.
+A popular standard, JSON facilitates information exchange. Programs often need to communicate with other systems. Since systems vary, standards are important.
 
 Go just happens to provide a json package: its standardized implementation to encode JSON from its various structures.
 
