@@ -27,7 +27,7 @@ func main() {
 	// place the user-inputted data into a map.
 	person[name] = address
 
-	// encode it into json
+	// encode it into json, store return in byte_array.
 	barr, _ := json.Marshal(person)
 
 	// inform the user of what the data in Go
