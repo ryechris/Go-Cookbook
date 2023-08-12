@@ -148,6 +148,7 @@ But we have already done a JSON example in file 04, so here we show another capa
 
 In so doing, we are able to focus more on fewer ideas -- since it is a cookbook -- instead of having too many ingredients in the program:
 Topics:
+- File Access
 - Slice: type, iteration
 - Flow control: loops, if, switch
 - Functions
