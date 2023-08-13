@@ -15,6 +15,7 @@ Riyan is responsible for all the Go code, but CS Professor Ian Harris of UCI sup
     + [5. Read File](#5-file-reader)
 - [Functions](#functions)
     + [6. Sort Bubble](#6-bubble-sorter)
+    + [7. Compute some Physics](#7-physics-calculator)
 
 #### 0. Requisites: Go and Git
 To test these programs, please ensure you have Go installed on your machine.
@@ -168,7 +169,6 @@ When it concludes, it displays the result to the user.
 
 For example, in organizing the code, lines that repeat often is placed into its own function for a higher-quality code writing.
 
-
 Note: The algorithm used here, the Bubble Sort algorithm, is a poor choice for production.
 Its inefficiency is pointed out by the comments in the code.
 But, the algorithm is useful to demonstrate the following topics:
@@ -177,6 +177,7 @@ But, the algorithm is useful to demonstrate the following topics:
 - Functions
 
 
-
+#### 7. Physics Calculator
+With values for velocity and acceleration reported (inputted) by the user, we will compute displacement. 
 
 
