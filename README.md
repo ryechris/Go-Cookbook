@@ -5,14 +5,16 @@ A set of small programs that each performs a specific task, which demonstrates c
 Riyan is responsible for all the Go code, but CS Professor Ian Harris of UCI supplies the inspiration.
 
 ## Table of Contents
-- [0. Requisites](#1-decimal-truncator)
-- [Data Type](#data-type)
+- [0. Requisites](#0-requisites-go-and-git)
+- [Data Types](#data-types)
     + [1. Truncate Decimals](#1-decimal-truncator)
     + [2. Find IBM](#2-ibm-finder)
     + [3. Sort Numbers](#3-number-sorter)
-- [Format](#format)
+- [Formats](#formats)
     + [4. Make JSON](#4-json-maker)
-    + [5. Read File](#5-read-file)
+    + [5. Read File](#5-file-reader)
+- [Functions](#functions)
+    + [6. Sort Bubble](#6-bubble-sorter)
 
 #### 0. Requisites: Go and Git
 To test these programs, please ensure you have Go installed on your machine.
