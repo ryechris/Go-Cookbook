@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
- 	"sort"  // We can use the slices package, but not every Go installation has it. 
+	"sort" // We can use the slices package, but not every Go installation has it.
 	"strconv"
 	"strings"
 )
@@ -34,4 +34,3 @@ func main() {
 		}
 	}
 }
-

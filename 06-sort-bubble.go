@@ -36,7 +36,7 @@ func main() {
 	/****/
 
 	fmt.Printf("The numbers you just inputted,")
-	fmt.Printf("in the order you enteredd them: %v\n\n", slice)
+	fmt.Printf("in the order you entered them: %v\n\n", slice)
 	fmt.Printf("Sorting...\n\n")
 
 	last_index := len(slice) - 1
@@ -44,7 +44,7 @@ func main() {
 	// We set the slice's last index as the limit of how many times the loops iterate.
 	// so if the last index is 1, the outer loop has only 1 iteration.
 	// if the last index is 5, then the outer loop goes for 5 iterations.
-	for upper_bound := last_index; upper_bound > 0; upper_bound-- { // (n-1) = 5 operations, where n = len(slice)
+	for upper_bound := last_index; upper_bound > 0; upper_bound-- { // (n-1) operations, where n = len(slice)
 
 		for i := 1; i <= upper_bound; i++ { // (n-1) operations, then (n-2), ... (n-(n-1)=1) for the last loop.
 			if slice[i] < slice[i-1] {
