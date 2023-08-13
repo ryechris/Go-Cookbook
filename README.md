@@ -146,8 +146,35 @@ Of course we can do anything with that data, such as printing it in JSON.
 But we have already done a JSON example in file 04, so here we show another capability of Go programs.
 
 In so doing, we are able to focus more on fewer ideas -- since it is a cookbook -- instead of having too many ingredients in the program:
-Topics:
 - File Access
 - Slice: type, iteration
-- Flow control: loops, if, switch
+- Flow control: loop, if, switch
 - Functions
+
+
+#### 6. Bubble Sorter
+```
+go run 06-sort-bubble.go
+```
+We continue our theme of code organization from program 05.
+
+However, program 06 is not a continuation of prog 05.
+
+This program asks input from user, and places them into an array (slice, actually).
+The program then sorts the numbers in ascending order.
+When it concludes, it displays the result to the user. 
+
+For example, in organizing the code, lines that repeat often is placed into its own function for a higher-quality code writing.
+
+
+Note: The algorithm used here, the Bubble Sort algorithm, is a poor choice for production.
+Its inefficiency is pointed out by the comments in the code.
+But, the algorithm is useful to demonstrate the following topics:
+- Organization
+- Control Flow: nested loops
+- Functions
+
+
+
+
+
