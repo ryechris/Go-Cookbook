@@ -19,7 +19,8 @@ func main() {
 	// constant acceleration, initial velocity, initial displacement, and time:
 	var a, v, s, t float64
 
-	fmt.Println("\nAll units are in Système International meters & seconds.\nNo need to enter units; just the number.\n")
+	fmt.Println("\nAll units are in Système International meters & seconds.\n")
+  fmt.Println("No need to enter units; just the number.\n")
 	fmt.Printf("constant acceleration (e.g. gravity: 9.8): ")
 	fmt.Scan(&a)
 
