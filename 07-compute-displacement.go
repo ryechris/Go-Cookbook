@@ -11,7 +11,7 @@ func computeDisplacement(a, v, s float64) func(float64) float64 {
 		return (float64(0.5)*a*t*t + v*t + s)
 	}
 
-	return f
+  return f // function f returned by the function computeDisplacement
 }
 
 func main() {
@@ -35,7 +35,7 @@ func main() {
 	fmt.Printf("initial displacement: %v\n", s)
 	fmt.Println("\n")
 
-	f := computeDisplacement(a, v, s)
+	f := computeDisplacement(a, v, s) // function as variable
 
 	fmt.Println("Now, you want to calculate the displacement after how many seconds?")
 	fmt.Println("e.g. 10.5 for diplacement after 10 and a half seconds.")
@@ -43,5 +43,6 @@ func main() {
 	fmt.Scan(&t)
 
 	fmt.Printf("The displacement is f(t) = f(%v) = %v meters\n", t, f(t))
+  // note that f remembers the values for a,v,s. This is lexical scoping.
 }
 
