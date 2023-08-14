@@ -178,6 +178,23 @@ But, the algorithm is useful to demonstrate the following topics:
 
 
 #### 7. Physics Calculator
-With values for velocity and acceleration reported (inputted) by the user, we will compute displacement. 
+Having covered functions in the previous recipe, we are now going to have fun to dive deeper into functions!
+
+We assume the user of this .go file
+```
+go run 07-compute-displacement.go
+```
+has some observed an object moving with a constant acceleration, such as a pen falling from a table.
+Hence, the program requests three pieces of data:
+- the constant acceleration (e.g. gravity, 9.8 m/s2)
+- the velocity of the object at the start of the observation (e.g. object starts at rest, 0 m/s)
+- and the starting displacement (e.g. 0 m)
+
+With these values reported (inputted) by the user, we will compute displacement.
+
+In the process, we learn about functions in Go being First Class values:
+- Functions as variables
+- Functions as return values
+- Function's environment & lexical scoping
 
 
