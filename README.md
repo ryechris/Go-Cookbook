@@ -205,7 +205,7 @@ In the process, we learn about functions in Go being First Class values:
 
 ### Object Orientation in Go
 
-#### 8. 
+#### 8. [in construction]
 Go does not have a class the way other Object Oriented languages have, such as Python.
 
 However, Go has an equivalent to class. We can "create a class" by associating data and methods.
@@ -223,7 +223,14 @@ After you have a struct, you make methods, and you ensure those methods are avai
 In this project, we illustrate how to ...
 
 
+... one popular way to introduce object orientation is with animals. The animal is deifned as an object.
+The animals can od things: it can move, it eats, etc. These verbs are represented by methods.
 
+Topics: 
+- Object Oriientation
+- Go's class equivalence: struct and methods organized together
+- Data access control and encapsulation
+- Receivers (including referencing and dereferencing)
 
 
 
