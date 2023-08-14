@@ -203,3 +203,34 @@ In the process, we learn about functions in Go being First Class values:
 - Function's environment & lexical scoping
 
 
+### Object Orientation in Go
+
+#### 8. 
+Go does not have a class the way other Object Oriented languages have, such as Python.
+
+However, Go has an equivalent to class. We can "create a class" by associating data and methods.
+
+If there are various data types -- like a class often has -- you can place them in a struct:
+```
+type Point struct {
+    x float64
+    y float64
+}
+```
+Of course, you can include as many pieces and types of data as you want in a struct.
+After you have a struct, you make methods, and you ensure those methods are available only for the struct you have in mind.
+
+In this project, we illustrate how to ...
+
+
+
+
+
+
+
+
+
+
+
+
+
