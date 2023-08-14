@@ -11,7 +11,7 @@ func computeDisplacement(a, v, s float64) func(float64) float64 {
 		return (float64(0.5)*a*t*t + v*t + s)
 	}
 
-  return f // function f returned by the function computeDisplacement
+	return f // function f returned by the function computeDisplacement
 }
 
 func main() {
@@ -20,7 +20,7 @@ func main() {
 	var a, v, s, t float64
 
 	fmt.Println("\nAll units are in Système International meters & seconds.\n")
-  fmt.Println("No need to enter units; just the number.\n")
+	fmt.Println("No need to enter units; just the number.\n")
 	fmt.Printf("constant acceleration (e.g. gravity: 9.8): ")
 	fmt.Scan(&a)
 
@@ -44,6 +44,5 @@ func main() {
 	fmt.Scan(&t)
 
 	fmt.Printf("The displacement is f(t) = f(%v) = %v meters\n", t, f(t))
-  // note that f remembers the values for a,v,s. This is lexical scoping.
+	// note that f remembers the values for a,v,s. This is lexical scoping.
 }
-
