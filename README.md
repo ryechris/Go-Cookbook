@@ -15,12 +15,12 @@ Riyan is responsible for all the Go code, but CS Professor Ian Harris of UCI sup
     + [5. Read File](#5-file-reader)
 - [Functions](#functions)
     + [6. Sort Bubble](#6-bubble-sorter)
-    + [7. Compute some Physics](#7-physics-calculator)
+    + [7. Compute Physics](#7-physics-calculator)
 - Object Orientation (in Go)
-    + 8. Farm Animals
-    + 9. 
+    + Farm Animals
+    +  
 - Concurrency
-    + 10. 
+    +  
 
 #### 0. Requisites: Go and Git
 To test these programs, please ensure you have Go installed on your machine.
