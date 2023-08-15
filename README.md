@@ -18,7 +18,7 @@ Riyan is responsible for all the Go code, but CS Professor Ian Harris of UCI sup
     + [7. Compute Physics](#7-physics-calculator)
 - Object Orientation (in Go)
     + Farm Animals
-    +  
+    + Farm Animals 2
 - Concurrency
     +  
 
