@@ -17,8 +17,8 @@ Riyan is responsible for all the Go code, but CS Professor Ian Harris of UCI sup
     + [6. Sort Bubble](#6-bubble-sorter)
     + [7. Compute Physics](#7-physics-calculator)
 - Object Orientation (in Go)
-    + Farm Animals
-    + Farm Animals 2
+    + [8. Farm Animals](#8-animal-farm)
+    + [9. Farm Animals 2](#9-animal-farm-2)
 - Concurrency
     +  
 
@@ -205,39 +205,38 @@ In the process, we learn about functions in Go being First Class values:
 
 ### Object Orientation in Go
 
-#### 8. [in construction]
+#### 8. Animal Farm
+This recipe is about how to do Object Oriented Programming in Go.
+
 Go does not have a class the way other Object Oriented languages have, such as Python.
 
-However, Go has an equivalent to class. We can "create a class" by associating data and methods.
+However, Go has something equivalent to class. To illustrate object oriented programming, a farm is locus classicus. It is "real life" it has objects (the animals), and the animals has methods (they have verbs: they can eat, walk, etc.).
+ 
+Hence, animal farm is more than a classic example: it is an excellent way to illutrate how we do OOP in Go.
+
+In Go, we "create a class" by associating data with methods.
 
 If there are various data types -- like a class often has -- you can place them in a struct:
 ```
 type Point struct {
-    x float64
-    y float64
+    x <some Type>
+    y <any Type>
+    ...
 }
 ```
-Of course, you can include as many pieces and types of data as you want in a struct.
-After you have a struct, you make methods, and you ensure those methods are available only for the struct you have in mind.
+After the struct, you make methods. And, you ensure those methods are available only for the struct you have in mind.
 
-In this project, we illustrate how to ...
+Topics:
+- Object Oriented Programming
+- Go's class equivalence: struct/data with methods.
+- Receivers
 
 
-... one popular way to introduce object orientation is with animals. The animal is deifned as an object.
-The animals can od things: it can move, it eats, etc. These verbs are represented by methods.
+#### 8. Animal Farm 2
+The Farm Animals continue. This time it gets more exciting
 
-Topics: 
-- Object Oriientation
-- Go's class equivalence: struct and methods organized together
+Topics:
 - Data access control and encapsulation
-- Receivers (including referencing and dereferencing)
-
-
-
-
-
-
-
-
+- Pointer Receivers
 
 
