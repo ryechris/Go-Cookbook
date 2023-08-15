@@ -94,7 +94,8 @@ func main() {
 		fmt.Println("> Options: dog, pig, donkey, horse")
 		fmt.Printf("> ")
 		fmt.Scan(&nimal)
-		if nimal == "exit" || (nimal != "dog" && nimal != "pig" && nimal != "donkey" && nimal != "horse") {
+		if nimal == "exit" || (nimal != "dog" && nimal != "pig" &&
+      nimal != "donkey" && nimal != "horse") {
 			fmt.Println("exiting...")
 			return
 		}
@@ -102,7 +103,8 @@ func main() {
 		fmt.Println("> Options: eat, move, speak")
 		fmt.Printf("> ")
 		fmt.Scan(&action)
-		if action == "exit" || (action != "eat" && action != "move" && action != "speak") {
+		if action == "exit" || (action != "eat" && action != "move"
+      && action != "speak") {
 			fmt.Println("exiting...")
 			return
 		}
