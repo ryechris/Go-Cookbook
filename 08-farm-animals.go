@@ -94,15 +94,17 @@ func main() {
 		fmt.Println("> Options: dog, pig, donkey, horse")
 		fmt.Printf("> ")
 		fmt.Scan(&nimal)
-		if nimal == "exit" {
+		if nimal == "exit" || (nimal != "dog" && nimal != "pig" && nimal != "donkey" && nimal != "horse") {
+      fmt.Println("exiting...")
 			return
 		}
 		fmt.Printf("> OK, what action would you like the %v to perform?\n", nimal)
 		fmt.Println("> Options: eat, move, speak")
 		fmt.Printf("> ")
 		fmt.Scan(&action)
-		if action == "exit" {
-			return
+    if action == "exit" || (action != "eat" && action != "move" && action != "speak"){
+			fmt.Println("exiting...")
+      return
 		}
 
 		// deliver user's request:
