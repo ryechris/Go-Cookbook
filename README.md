@@ -235,6 +235,9 @@ Topics:
 #### 9. Animal Farm 2
 The Farm Animals continue. This time it gets more exciting
 
+[other oop langs: polymorphism, inheritance & overriding
+Go: interfaces]
+
 Topics:
 - Data access control and encapsulation
 - Pointer Receivers
