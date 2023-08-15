@@ -19,11 +19,11 @@ func (a Animal) Eat() {
 }
 
 func (a Animal) Move() {
-	fmt.Printf("%v", a.locomotion)
+	fmt.Printf("%ving...", a.locomotion)
 }
 
 func (a Animal) Speak() {
-	fmt.Printf("%v", a.noise)
+	fmt.Printf("%v %v", a.noise, a.noise)
 }
 
 /* The afore three methods only work on the Animal struct. There is no outher outlet to call them. */
@@ -38,10 +38,11 @@ func main() {
 	pig := Animal{"pig", "soybeans", "walk", "oink"}
 
 	// donkey
-	donkey := Animal{"donkey", "hay", "", ""}
+	donkey := Animal{"donkey", "hay", "walk", "hee-haw"}
 
 	// horse
-	horse := Animal{"horse", "grass", "", ""}
+	horse := Animal{"horse", "grass", "walk", "neigh"}
+
 	/* This line concludes our object instantiations code. */
 
 	// We are going to use maps to handle user choices.
