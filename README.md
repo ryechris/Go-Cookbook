@@ -242,7 +242,7 @@ A subclass is called so because it inherits the data and methods from the class,
 For example, the Cat subclass inherits from the Animal class. But it overrides the Speak() method, because cats meow: they don't moo, they don't woof or any other noise.
 In this case, we say that the Speak() method is polymorphic. 
 
-In an OOP langauge (e.g. Java), the method Speak() is polymorphic: because although the method (and method signature is the same, it may differ from subclass to subclass. In the afore example, Speak() in Cat is different from Speak() in Dog, as you would observe in "real life."
+In an OOP langauge (e.g. Java), the method Speak() is polymorphic: because although the method (inc method signature) is the same, it may differ from subclass to subclass. In the afore example, Speak() in Cat is different from Speak() in Dog, as you would observe in "real life."
 
 So evidently this is an important feature. But Go does not offer class or subclass or inheritance or overriding. So how do we do polymorphism in Go?
 
