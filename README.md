@@ -236,6 +236,7 @@ Topics:
 This time it gets more exciting. The Farm Animals continue.
 It continues because we're not done with Object Oriented Programming.
 We are not done with OOP because we have not covered something that is always discussed in any treatment of OOP: polymorphism.
+
 Polymorphism is when a thing is able to take on multiple forms.The terminology involved with polymorphism is inheritance and overriding. For example, looking at our animal farm, suppose the object-oriented programmer creates a class for animal. It has a method Speak(), because animals can produce sounds. But these sounds vary: a cat meows, and a dog woofs. So what does the object programmer do? He creates a subclass for each animal: Cat for cats, Dog for dogs.
 A subclass is called so because it inherits the data and methods from the class, and because it can override them.
 For example, the Cat subclass inherits from the Animal class. But it overrides the Speak() method, because cats meow: they don't moo, they don't woof or any other noise.
@@ -248,11 +249,9 @@ So evidently this is an important feature. But Go does not offer class or subcla
 This recipe is all about how we do polymorphism in Go.
 
 
-[other oop langs: polymorphism, inheritance & overriding
-Go: interfaces]
 
 Topics:
 - Data access control and encapsulation
 - Pointer Receivers
-
+- Polymorphism: how we accomplish that with Go
 
