@@ -235,7 +235,7 @@ Topics:
 #### 9. Animal Farm 2
 This time it gets more exciting. The Farm Animals continue.
 It continues because we're not done with Object Oriented Programming.
-We are not done with OOP because we have not covered something that is always discussed in any treatment of OOP: polymorphism.
+We are not done with OOP because we have not covered something that is always discussed in OOP: polymorphism.
 
 Polymorphism is when a thing is able to take on multiple forms.The terminology involved with polymorphism is inheritance and overriding. For example, looking at our animal farm, suppose the object-oriented programmer creates a class for animal. It has a method Speak(), because animals can produce sounds. But these sounds vary: a cat meows, and a dog woofs. So what does the object programmer do? He creates a subclass for each animal: Cat for cats, Dog for dogs.
 A subclass is called so because it inherits the data and methods from the class, and because it can override them.
