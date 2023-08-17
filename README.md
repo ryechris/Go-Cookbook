@@ -252,9 +252,12 @@ This recipe is all about how we do polymorphism in Go.
 
 Topics:
 - Interface: what it is
-- Data access control and encapsulation
-- Pointer Receive
 - Polymorphism: how we accomplish that with Go
+- Reflection
+
+
+- Data access control and encapsulation
+- Pointer Receiver
 
 
 ### Concurrency
