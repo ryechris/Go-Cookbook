@@ -251,7 +251,14 @@ This recipe is all about how we do polymorphism in Go.
 
 
 Topics:
+- Interface: what it is
 - Data access control and encapsulation
-- Pointer Receivers
+- Pointer Receive
 - Polymorphism: how we accomplish that with Go
 
+
+### Concurrency
+
+From Go co-creator Rob Pike:
+concurrency: a way of programming
+parallelism: the execution of several goroutines at the same time
