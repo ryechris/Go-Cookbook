@@ -1,3 +1,5 @@
+// Copyright (c) 2023 Riyan Christy. All rights reserved.
+
 package main
 
 import (
