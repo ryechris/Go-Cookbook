@@ -6,24 +6,24 @@ import "fmt"
 
 // Here we define the animal struct: the animal "class" sans the verbs/methods.
 type Animal struct {
-	species    string
-	food       string
-	locomotion string
-	noise      string
+	Species    string
+	Food       string
+	Locomotion string
+	Noise      string
 }
 
 /* We write these three methods with a receiver, so that they only work on the Animal struct.*/
 // we create the "verbs" for our object the animal.
 func (a Animal) Eat() {
-	fmt.Printf("%v eating %v...!\n", a.species, a.food)
+	fmt.Printf("%v eating %v...!\n", a.Species, a.Food)
 }
 
 func (a Animal) Move() {
-	fmt.Printf("%ving...", a.locomotion)
+	fmt.Printf("%ving...", a.Locomotion)
 }
 
 func (a Animal) Speak() {
-	fmt.Printf("%v %v", a.noise, a.noise)
+	fmt.Printf("%v %v", a.Noise, a.Noise)
 }
 
 /* The afore three methods only work on the Animal struct. There is no outher outlet to call them. */
