@@ -237,27 +237,22 @@ This time it gets more exciting. The Farm Animals continue.
 It continues because we're not done with Object Oriented Programming.
 We are not done with OOP because we have not covered something that is always discussed in OOP: polymorphism.
 
-Polymorphism is when a thing is able to take on multiple forms.The terminology involved with polymorphism is inheritance and overriding. For example, looking at our animal farm, suppose the object-oriented programmer creates a class for animal. It has a method Speak(), because animals can produce sounds. But these sounds vary: a cat meows, and a dog woofs. So what does the object programmer do? He creates a subclass for each animal: Cat for cats, Dog for dogs.
+Polymorphism is when a thing is able to take on multiple forms. Two constructs that enable polymorphism is inheritance and overriding. For example, looking at our animal farm, suppose the object-oriented programmer creates a class for animal. It has a method Speak(), because animals can produce sounds. But these sounds vary: a cat meows, and a dog woofs. So what does the object programmer do? He creates a subclass for each animal: Cat for cats, Dog for dogs.
 A subclass is called so because it inherits the data and methods from the class, and because it can override them.
 For example, the Cat subclass inherits from the Animal class. But it overrides the Speak() method, because cats meow: they don't moo, they don't woof or any other noise.
-In this case, we say that the Speak() method is polymorphic. 
-
-In an OOP langauge (e.g. Java), the method Speak() is polymorphic: because although the method (inc method signature) is the same, it may differ from subclass to subclass. In the afore example, Speak() in Cat is different from Speak() in Dog, as you would observe in "real life."
+In this case, we say that the Speak() method is polymorphic, because although the method (inc method signature) is the same, it may differ from subclass to subclass. In the afore example, Speak() in Cat is different from Speak() in Dog, as you would observe in "real life."
 
 So evidently this is an important feature. But Go does not offer class or subclass or inheritance or overriding. So how do we do polymorphism in Go?
 
-This recipe is all about how we do polymorphism in Go.
-
+This recipe is all about how we do polymorphism in Go. It demonstrates that Go's interface accomplishes inheritance and overriding, but without those concepts of inheritance & overriding.
 
 
 Topics:
-- Interface: what it is
 - Polymorphism: how we accomplish that with Go
-- Reflection
+- Interface: what it is and an example
+- Reflection: an example of it in action
 
 
-- Data access control and encapsulation
-- Pointer Receiver
 
 
 ### Concurrency
@@ -265,3 +260,4 @@ Topics:
 From Go co-creator Rob Pike:
 concurrency: a way of programming
 parallelism: the execution of several goroutines at the same time
+
