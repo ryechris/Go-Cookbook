@@ -246,8 +246,15 @@ In this case, we say that the Speak() method is polymorphic, because although th
 
 So evidently this is an important feature. But Go does not offer class or subclass or inheritance or overriding. So how do we do polymorphism in Go?
 
-This recipe is all about how we do polymorphism in Go. It demonstrates that Go's interface accomplishes inheritance and overriding, but without those concepts of inheritance & overriding.
+This recipe is all about how we do polymorphism in Go. It demonstrates that Go's interface accomplishes both inheritance and overriding, but without those concepts of inheritance & overriding.
 
+In the first Animal Farm, Animal is a struct.
+Here, Animal is an interface. And we create structs for the "objects" (e.g. dog, pig) and making them satisfy the interface. We show how that is done in Go: there is no explicit statement that they satisfy the interface. They just do, and we know they do as long as they implement all the methods in the interface.
+
+Also, in the first Animal Farm, there is no option to create a new animal.
+Now in Animal Farm 2, the user can make one new animal.
+To accomplish this feature, we have to modify the struct for the new animal -- at runtime.
+To do that, we call upon the powerful Reflection, and we get to see it in action.
 
 Topics:
 - Polymorphism: how we accomplish that with Go
