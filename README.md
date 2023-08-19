@@ -269,3 +269,12 @@ From Go co-creator Rob Pike:
 concurrency: a way of programming
 parallelism: the execution of several goroutines at the same time
 
+The excitement continues!
+- Concurrent Programming
+- Synchronization (communicate to synchronize)
+- Threads and Goroutines
+- Communication and Channels (buffered and unbuffered)
+
+- select for loop
+- sync.mutex (sync.waitgroup?)
+- 
