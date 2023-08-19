@@ -20,7 +20,7 @@ Riyan is responsible for all the Go code, but CS Professor Ian Harris of UCI sup
     + [8. Farm Animals](#8-animal-farm)
     + [9. Farm Animals 2](#9-animal-farm-2) (has Interface and Reflection :)
 - [Concurrency](#concurrency)
-    + [10. Goroutines]()
+    + [10. Goroutines](#10-factorial-calculator)
     + [11. Dining Philosophers in Goroutines]()
 
 #### 0. Requisites: Go and Git
@@ -277,4 +277,6 @@ The excitement continues!
 
 - select for loop
 - sync.mutex (sync.waitgroup?)
-- 
+-
+
+#### 10. Factorial Calculator 
