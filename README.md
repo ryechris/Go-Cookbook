@@ -211,9 +211,9 @@ This recipe is about how to do Object Oriented Programming in Go.
 
 Go does not have a class the way other Object Oriented languages have, such as Python.
 
-However, Go has something equivalent to class. To illustrate object oriented programming, a farm is locus classicus. It is "real life" it has objects (the animals), and the animals has methods (they have verbs: they can eat, walk, etc.).
+However, Go has something equivalent to class. To illustrate object oriented programming, a farm is locus classicus. It is "real life": it has objects (the animals), and the animals has methods (they have verbs: they can eat, walk, etc.).
  
-Hence, animal farm is more than a classic example: it is an excellent way to illutrate how we do OOP in Go.
+Hence, animal farm is more than a classic example: it is an excellent way to illustrate how we do OOP in Go.
 
 In Go, we "create a class" by associating data with methods.
 
