@@ -317,3 +317,21 @@ The Dining Philosophers always seem to make their way into every concurrency dis
 Five philosophers -- say, Plato, Aristotle, Socrates, Sun Tzu, and Kant -- walk into a round, dining table and take a seat.
 They are served each a rice dish, and they all want to start eating immediately.
 But only five chopsticks are available (not five pairs).
+
+So they can't all eat at the same time. Because, if each person takes 1 chopstick, they will have no more chopsticks.
+In code, this looks as follows:
++ to eat, a person must take a chopstick on his left and on his right.
++ each philosopher on the table can take the chopstick to his left.
++ but when each wants to take the chopstick on the right, it's "locked": it isn't available because it is in the hands of the person next to him.
+In the end, person1 is waiting for person2 to finish, who can't finish because he has only 1 chopstick. That person 2 is waiting for person 3 to release the left chopstick, which he isn't going to do because he needs it. Person 3 waits for person4, and so on... and person5 waits for person1. What you have here is called a deadlock, and none of the programs can finish. It's stuck, and the go runtime would throw and error.
+
+So our concurrent program needs to solve this deadlock: the philosophers must all be able to finish the meal in front of them.
+
+Topics:
+- communication
+- deadlock
+- sync.Mutex
+
+
+
+
