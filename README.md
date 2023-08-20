@@ -315,23 +315,35 @@ In doing all of the above, this concurrent/multi-threaded program highlights emp
 The Dining Philosophers always seem to make their way into every concurrency discussion. We are not immune to their visit. It is a classic to illustrate concurrency problems.
 
 Five philosophers -- say, Plato, Aristotle, Socrates, Sun Tzu, and Kant -- walk into a round, dining table and take a seat.
-They are served each a rice dish, and they all want to start eating immediately.
+They are served each a bowl of rice dish, and they all want to start eating immediately.
 But only five chopsticks are available (not five pairs).
 
-So they can't all eat at the same time. Because, if each person takes 1 chopstick, they will have no more chopsticks.
-In code, this looks as follows:
-+ to eat, a person must take a chopstick on his left and on his right.
-+ each philosopher on the table can take the chopstick to his left.
-+ but when each wants to take the chopstick on the right, it's "locked": it isn't available because it is in the hands of the person next to him.
-In the end, person1 is waiting for person2 to finish, who can't finish because he has only 1 chopstick. That person 2 is waiting for person 3 to release the left chopstick, which he isn't going to do because he needs it. Person 3 waits for person4, and so on... and person5 waits for person1. What you have here is called a deadlock, and none of the programs can finish. It's stuck, and the go runtime would throw and error.
+The five chopsticks are placed such that there is one chopstick between every adjacent pair of philosophers. So they can't all eat at the same time.
+In code, an object-oriented coder may do the following
++ create a philosopher object and a chopstick object.
++ add a method Eat() to the philosopher object: each philosopher take the chopstick to his left and then to his right.
++ to ensure that no two or more threads access a chopstick at one time, it adds a block to the aforementioned method.
++ So the philosopher objects run concurrently, picking the chopstick to his left. And then each one wants to pick the chopstick to his right.
++ But interleavings happen where every philosopher holds the chopstick to his left, so when each goes to the next line of instruction to pick up the chopstick to his right, it's blocked.
++ Now each philosopher is waiting for the next philosopher to unblock, but to unblock it needs the next one to unblock. There are circular dependencies, and thus a deadlock.
+
+In the end, person1 is waiting for person2 to finish, who can't finish because he has only 1 chopstick. That person 2 is waiting for person 3 to release the left chopstick, which he isn't going to do because he needs it. Person 3 waits for person4, and so on... and person5 waits for person1. It is stuck, and the go runtime throws an error.
 
 So our concurrent program needs to solve this deadlock: the philosophers must all be able to finish the meal in front of them.
 
-Topics:
-- communication
-- deadlock
-- sync.Mutex
+Our concurrent program, file #11, does just that: solve the Dining Philosophers problem.
 
+*In the program as is, each philosopher eats only once. However, if you want to see that there really is no deadlock even if the cycle is infinite, you can uncomment the for loop inside the file:
+```
+// for {
+...
+// }
+```
+Then the program will run infinitely in your Command Line, until you press ctrl-c.
 
-
-
+Main Topics:
+- Deadlocks
+- Communication
+- Synchronization
+  + Mutex
+  + Waitgroup
