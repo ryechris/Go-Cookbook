@@ -280,5 +280,35 @@ The excitement continues!
 -
 
 #### 10. Factorial Calculator
+This multi-threaded application computes factorials. When you run 
+```
+go run 10-compute-factorial.go
+```
+You input the number you want the factorial of. 
+For example, if you want 5!, you enter 5.
+The program will then compute 5! = 5 * 4 * 3 * 2 * 1 = 120.
+Due to the size of integers, 20 is the largest integer it accepts.
+(Because 20! is already large at 20! = 2,432,902,008,176,640,000)
+
+Computing factorial is relatively compute-intensive. 
+Instead of doing it in one sequence, we use a total of 7 goroutines (including the Main one) to obtain the factorial.
+The program divides the list of integers (e.g. 8!: 8 * 7 * 6... * 1) into four, then it assigns a goroutine to compute the factorial of each (e.g. 8 * 7, 6 *5.... 2*1)
+Then, it takes the resultant numbers and repeat the process, with one difference: we divide the list into two, and use two goroutines to handle it. The final result is two numbers, and the main goroutine.
+(see code for the actual sequence of lines)
+
+So this is concurrent programming, with many threads running concurrently. Concurrency really happens at the machine-code instructions, we have no idea of the interleavings that can or do take place. Since we have no visibility into the interleavings, many things can go wrong.
+
+But nothing goes wrong in this program. Nothing goes wrong here because we ensure excellent communication among the threads (the goroutines) by following the design of the Go creators closely:
+- communicate by sharing memory (not share memory by communicating)
+- communicate to synchronize (not synchronize to communicate)
+
+Additional note: We use buffered channels to minimize the blockings that occur (since these blockings reduce our efficiency).
+
+In doing all of the above, this concurrent/multi-threaded program highlights emphases on:
+- Synchronization
+- Threads and Goroutines
+- Communication and Channels
+
+
 
 #### 11. Dining Philosophers
