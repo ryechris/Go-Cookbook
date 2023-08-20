@@ -19,12 +19,12 @@ type Chopstick struct {
 	mu sync.Mutex
 }
 
-type Philo struct {
+type Philosopher struct {
 	FirstChopstick, SecondChopstick *Chopstick // pointer type to chopstick
 	number                          int
 }
 
-func (p *Philo) eat() {
+func (p *Philosopher) eat() {
 	// The infinite for loop has been commented out,
 	// so that each philosopher eats once and then exits.
 	// However, this solution has no problems -- even for an infinite loop.
@@ -34,12 +34,12 @@ func (p *Philo) eat() {
 	p.FirstChopstick.mu.Lock()
 	p.SecondChopstick.mu.Lock()
 
-	fmt.Printf("Philo %v eating\n", p.number)
+	fmt.Printf("Philosopher %v eating\n", p.number)
 
 	p.FirstChopstick.mu.Unlock()
 	p.SecondChopstick.mu.Unlock()
 
-	fmt.Printf("Philo %v exiting...\n\n", p.number)
+	fmt.Printf("Philosopher %v exiting...\n\n", p.number)
 	// }
 	wg.Done()
 }
@@ -53,11 +53,13 @@ func main() {
 		Chopsticks[i] = new(Chopstick)
 	}
 
-	philos := make([]*Philo, 5)
+	// slice for the five philosophers
+	philosophers := make([]*Philosopher, 5)
 	for i := 0; i < 5; i++ {
 		var f, s *Chopstick
 
-		// use %5 because without it, philo4 would have chopsticks[5].
+		// Here we set the hierarchy: we number each chopstick.
+		// use %5 because without it, p4 would have chopsticks[5].
 		if ((i + 1) % 5) < i {
 			f = Chopsticks[(i+1)%5]
 			s = Chopsticks[i]
@@ -67,13 +69,15 @@ func main() {
 		}
 
 		// we initialize a philosopher with a number, so we can differentiate.
-		philos[i] = &Philo{f, s, i + 1}
+		philosophers[i] = &Philosopher{f, s, i + 1}
 	}
 	wg.Add(5)
 	for i := 0; i < 5; i++ {
-		go philos[i].eat()
+		go philosophers[i].eat()
 	}
 	wg.Wait()
-	fmt.Println("SOLUTION SUCCEEDS -- 0 deadlock, 0 error.")
-	// put wait group here.
+
+	fmt.Println("SOLUTION SUCCEEDS")
+	fmt.Println("-- 6 goroutines (including Main's), 0 deadlock.")
 }
+
