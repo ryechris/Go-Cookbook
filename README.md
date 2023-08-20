@@ -312,3 +312,8 @@ In doing all of the above, this concurrent/multi-threaded program highlights emp
 
 
 #### 11. Dining Philosophers
+The Dining Philosophers always seem to make their way into every concurrency discussion. We are not immune to their visit. It is a classic to illustrate concurrency problems.
+
+Five philosophers -- say, Plato, Aristotle, Socrates, Sun Tzu, and Kant -- walk into a round, dining table and take a seat.
+They are served each a rice dish, and they all want to start eating immediately.
+But only five chopsticks are available (not five pairs).
