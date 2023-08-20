@@ -16,9 +16,9 @@ func main() {
 	var ui int
 	fmt.Println("> Hi! Welcome to the Factorial Calculator")
 	fmt.Println("> Please enter the number you want the factorial of:")
-	fmt.Println("> e.g. enter 5 for 5! (but < 21; we keep it to 20.)")
+	fmt.Println("> e.g. enter 5 for 5! (but < 21; so 20 max.)")
 	fmt.Printf("> ")
-	_, err := fmt.Scan(&ui)
+	_, err := fmt.Scan(&ui) // errors as values. 
 
 	// Handle errors
 	if err != nil {
@@ -71,7 +71,7 @@ func main() {
 	a := <-c
 	b := <-c
 
-	fmt.Println("> The factorial:", a*b)
+	fmt.Printf("> The factorial: %v! = %v\n", ui, a*b)
 
 	// side note:
 	// There are a lot of variables that we could "delete" after use,
