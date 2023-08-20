@@ -55,11 +55,13 @@ func main() {
 
 	// slice for the five philosophers
 	philosophers := make([]*Philosopher, 5)
-	for i := 0; i < 5; i++ {
-		var f, s *Chopstick
 
-		// Here we set the hierarchy: we number each chopstick.
-		// use %5 because without it, p4 would have chopsticks[5].
+	// bring in the philosophers
+	for i := 0; i < 5; i++ {
+		var f, s *Chopstick // f for first, s for second
+
+		// Here we set the Resource Hierarchy: we number each chopstick.
+		// (use %5 because without it, p4 would have chopsticks[5].)
 		if ((i + 1) % 5) < i {
 			f = Chopsticks[(i+1)%5]
 			s = Chopsticks[i]
@@ -71,8 +73,9 @@ func main() {
 		// we initialize a philosopher with a number, so we can differentiate.
 		philosophers[i] = &Philosopher{f, s, i + 1}
 	}
+
 	wg.Add(5)
-	for i := 0; i < 5; i++ {
+	for i := 0; i < 5; i++ { // 5 goroutines here
 		go philosophers[i].eat()
 	}
 	wg.Wait()
